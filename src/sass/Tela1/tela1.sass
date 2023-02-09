@@ -1,0 +1,209 @@
+@import '../main'
+
+button
+    border: 3px solid rgb(0, 120, 0)
+    background-color: white
+    border-radius: 10px
+    margin: 2% 0 2% 0
+    height: 35px
+    width: 100px
+    font-size: 22px
+    box-shadow: 1px 1px 3px 0px black
+    &:hover
+        color: white
+        background-color: rgb(0, 120, 0)
+        box-shadow: 0px 0px 0px 0px black
+    &:active
+        box-shadow: inset 1px 1px 5px 1px black
+        color: white
+        background-color: rgb(0, 120, 0)
+
+@media screen and (min-width: $midium)
+    .tela--inicial--tela1
+        z-index: 10
+        position: fixed
+        width: 200px
+        height: 100%
+        background-color: $fundo--padrao
+        font-family: $font--roboto
+        p
+            font-size: 16px
+            padding: 5px
+            &:hover
+                cursor: pointer
+                color: white
+                background-color: $fundo--menu--lateral--padrao
+
+    .tela--geral
+        margin: auto auto auto 0px
+        height: 100%
+        background-color: $fundo--padrao
+        .botoes
+            display: flex
+            justify-content: space-evenly
+            button
+                width: 20%
+                margin: 40px 0px
+        .CorpoProntas
+            h1
+                font-size: 18pt
+                text-align: center
+                padding: 20px 0
+                background: rgba(200, 200, 200, 1)
+                border-bottom: 1px solid black
+            .aba
+                display: flex
+                flex-wrap: wrap
+                margin: 0px 3%
+                .text--bar
+                    width: 100%
+                    padding: 10px 0px
+                    border-bottom: 1px solid black
+                    text-align: center
+                    background-color: rgba(240, 240, 240, 0.9)
+                .aba1
+                    width: 50%
+                    background-color: rgba(255, 255, 230, 0.9)
+                    .tab
+                        padding: 10px 40px
+                        text-align: center
+                        white-space: nowrap
+                        border-bottom: 1px solid black
+                        font-weight: 800
+                .aba2
+                    width: 50%
+                    background-color: rgba(230, 255, 230, 0.9)
+                    .tab
+                        margin: auto
+                        padding: 10px
+                        border-bottom: 1px solid black
+
+    .tela--consulta
+        padding: 20px
+        h1
+            font-size: 28px
+            margin: 20px
+        h4
+            color: rgba(0, 0, 0, 0.5)
+        form
+            display: flex
+            flex-direction: column
+
+            div
+                margin-top: 40px
+            label
+                font-size: 20px
+                margin: 2% 0 2% 0
+            #opt
+                vertical-align: top
+            .radio
+                width: 20px
+                height: 20px
+                margin: auto 1% auto auto
+            input
+                border-radius: 10px
+                margin: 2% 0 2% 0
+                font-size: 12pt
+                width: 250px
+                height: 30px
+            
+
+@media screen and (max-width: $small)
+    .tela--inicial--tela1
+        z-index: 10
+        position: fixed
+        width: 200px
+        height: 100%
+        background-color: $fundo--padrao
+        font-family: $font--roboto
+        
+        p
+            font-size: 16px
+            padding: 5px
+            &:hover
+                cursor: pointer
+                color: white
+                background-color: $fundo--menu--lateral--padrao
+
+    .tela--geral
+        margin: 0
+        padding: 0 5% 
+        height: auto
+        background-color: $fundo--padrao
+        .botoes
+            button
+                width: 100%
+                height: 50px
+                margin: 10px 0px
+                border-radius: 0px
+        .CorpoProntas
+            h1
+                font-size: 18pt
+                text-align: center
+                padding: 20px 0
+                background: rgba(200, 200, 200, 1)
+                border-bottom: 1px solid black
+            .aba
+                display: flex
+                flex-wrap: wrap
+                margin: 0px 3%
+                .text--bar
+                    width: 100%
+                    padding: 10px 0px
+                    border-bottom: 1px solid black
+                    text-align: center
+                    background-color: rgba(240, 240, 240, 0.9)
+                .aba1
+                    width: 50%
+                    background-color: rgba(255, 255, 230, 0.9)
+                    .tab
+                        padding: 10px 1px
+                        text-align: center
+                        white-space: nowrap
+                        border-bottom: 1px solid black
+                        font-weight: 800
+                .aba2
+                    width: 50%
+                    background-color: rgba(230, 255, 230, 0.9)
+                    .tab
+                        margin: auto
+                        padding: 10px 1px
+                        text-align: center
+                        white-space: nowrap
+                        border-bottom: 1px solid black
+
+    .tela--consulta
+        padding: 20px
+        h1
+            font-size: 28px
+            margin: 20px
+            text-align: center
+        h4
+            text-align: center
+            color: rgba(0, 0, 0, 0.5)
+        form
+            display: flex
+            flex-direction: column
+            div
+                margin-top: 40px
+            label
+                font-size: 20px
+                margin: 2% 0 2% 0
+            .opt
+                text-align: center
+            .radio
+                width: 20px
+                height: 20px
+                margin: auto 1% auto auto
+            input
+                align-self: center
+                border-radius: 10px
+                margin: 2% 0 2% 0
+                font-size: 12pt
+                width: 80%
+                height: 30px
+                text-align: center
+            button
+                align-self: center
+                width: 81.5%
+                height: 50px

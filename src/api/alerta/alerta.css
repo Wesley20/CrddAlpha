@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto";
+}
+
+input {
+  background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 150px;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px;
+    padding: 20px 20px 0px 20px;
+    height: 65vh;
+    width: 65vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicial .placa--input {
+    display: flex;
+    min-height: 400px;
+    vertical-align: middle;
+    margin: 20px;
+    padding: 0px 20%;
+  }
+  .box--container .tela--inicial .placa--input p {
+    height: 40px;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 2%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px 0px;
+    height: 65vh;
+    width: 70vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 799px) {
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  .menu--superior {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fafafa;
+  }
+  .menu--superior div {
+    display: flex;
+    justify-content: center;
+  }
+  .menu--superior div img {
+    height: 10vh;
+  }
+  .menu--lateral {
+    width: 100%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .menu--lateral div h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 600;
+  }
+  .menu--lateral div p {
+    border: 0.5px solid black;
+    text-align: center;
+    font-weight: 200;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16pt;
+    background: white;
+    color: black;
+    text-shadow: 0;
+  }
+  .menu--lateral div p:hover {
+    color: black;
+    background: #cccccc;
+  }
+  .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .tela--inicial {
+    width: auto;
+    height: 50vh;
+    margin: 0;
+    background: #ffffff;
+  }
+  .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .show {
+    display: block;
+  }
+  .tela--inicio {
+    width: 100vw;
+  }
+  .tela--inicio p {
+    padding: 5%;
+    font-size: 18pt;
+  }
+  .tela--inicio::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#modal div {
+  border-top: 40px solid rgb(0, 80, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 20%;
+  top: 40%;
+  width: 60%;
+  height: 20%;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px 5px black;
+}
+#modal div p {
+  margin: auto 2% auto 2%;
+  font-size: 28px;
+}/*# sourceMappingURL=alerta.css.map */

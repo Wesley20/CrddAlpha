@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto";
+}
+
+input {
+  background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 150px;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px;
+    padding: 20px 20px 0px 20px;
+    height: 65vh;
+    width: 65vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicial .grt .campo {
+    margin: 20px;
+  }
+  .box--container .tela--inicial h4 {
+    color: rgb(100, 100, 100);
+    padding: 10px 0px 20px 0px;
+  }
+  .box--container .tela--inicial .placa--input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    vertical-align: middle;
+    margin: 20px;
+    padding: 0px 20%;
+  }
+  .box--container .tela--inicial .placa--input p {
+    margin: 10px;
+    text-align: center;
+    color: rgb(150, 150, 150);
+  }
+  .box--container .tela--inicial .sessao {
+    display: flex;
+    font-size: 15pt;
+  }
+  .box--container .tela--inicial .sessao .titulo {
+    width: 50%;
+    text-align: end;
+  }
+  .box--container .tela--inicial .sessao .titulo p {
+    padding: 10px;
+  }
+  .box--container .tela--inicial .sessao .titulo p:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+  }
+  .box--container .tela--inicial .sessao .titulo p:nth-child(odd) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .box--container .tela--inicial .sessao .resposta {
+    width: 50%;
+  }
+  .box--container .tela--inicial .sessao .resposta p {
+    padding: 10px;
+  }
+  .box--container .tela--inicial .sessao .resposta p:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+  }
+  .box--container .tela--inicial .sessao .resposta p:nth-child(odd) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .box--container .tela--inicial .Digital p {
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .box--container .tela--inicial .Digital .dedo {
+    width: 220px;
+    height: 120px;
+    margin: auto;
+  }
+  .box--container .tela--inicial .Digital .dedo img {
+    margin: auto;
+  }
+  .box--container .tela--inicial .Digital .dedo #msg1 {
+    margin: 80px auto 30px auto;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 2%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px 0px;
+    height: 65vh;
+    width: 70vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 799px) {
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  .menu--superior {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fafafa;
+  }
+  .menu--superior div {
+    display: flex;
+    justify-content: center;
+  }
+  .menu--superior div img {
+    height: 10vh;
+  }
+  .menu--lateral {
+    width: 100%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .menu--lateral div h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 600;
+  }
+  .menu--lateral div p {
+    border: 0.5px solid black;
+    text-align: center;
+    font-weight: 200;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16pt;
+    background: white;
+    color: black;
+    text-shadow: 0;
+  }
+  .menu--lateral div p:hover {
+    color: black;
+    background: #cccccc;
+  }
+  .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .tela--inicial {
+    width: auto;
+    height: 50vh;
+    margin: 0;
+    background: #ffffff;
+  }
+  .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .show {
+    display: block;
+  }
+  .tela--inicio {
+    width: 100vw;
+  }
+  .tela--inicio p {
+    padding: 5%;
+    font-size: 18pt;
+  }
+  .tela--inicio::-webkit-scrollbar {
+    width: 0px;
+  }
+}/*# sourceMappingURL=main.css.map */

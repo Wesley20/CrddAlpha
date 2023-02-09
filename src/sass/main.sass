@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+//Variaveis padrao
+$fundo--padrao: #ffffff
+$fundo--menu--lateral--padrao: #fafafa
+$fundo--menu--superior--padrao: $fundo--menu--lateral--padrao
+$fundo--menu--opcoes: #a7a7a7
+$botao--hover: #cccccc
+$borda--padrao: #000000
+
+
+$font--roboto: 'Roboto'
+$font--color--clara: white
+
+$large: 1200px
+$midium: 800px
+$small: 799px
+
+    
+body
+    font-family: $font--roboto
+input
+    background-color: white
+
+@media screen and (min-width: $large)
+    body
+        overflow: hidden
+    .box--container
+        display: flex
+        width: 100%
+        height: 77.4vh
+        .menu--lateral
+            width: 15vw
+            height: 85%
+            margin: 30px 30px 0px 150px
+            background: $fundo--menu--lateral--padrao
+            overflow-y: auto
+            overflow-x: hidden
+            &::-webkit-scrollbar
+                width: 0px           
+            div
+                h1
+                    font-family: Arial, Helvetica, sans-serif
+                p
+                    border: 0.5px solid black
+                    padding: 8px 20px 8px 20px
+                    cursor: pointer
+                    font-size: 10pt
+                    background: rgba(220, 220, 220, 0.8)
+                    &:hover
+                        background: rgba(255, 50, 50, 0.9)
+                
+        .tela--inicial
+            overflow: auto
+            margin: 30px
+            padding: 20px 20px 0px 20px
+            height: 65vh
+            width: 65vw
+            min-width: 500px
+            background: $fundo--padrao
+            align-content: center
+            border: 1px solid black
+            &::-webkit-scrollbar
+                width: 0px
+
+            .grt
+                .campo
+                    margin: 20px
+
+            h4
+                color: rgba(100, 100, 100, 1)
+                padding: 10px 0px 20px 0px 
+            .placa--input
+                display: flex
+                flex-direction: column
+                justify-content: center
+                min-height: 400px
+                vertical-align: middle
+                margin: 20px
+                padding: 0px 20%
+                p
+                    margin: 10px
+                    text-align: center
+                    color: rgb(150, 150, 150)
+
+            .sessao
+                display: flex
+                font-size: 15pt
+                .titulo
+                    width: 50%
+                    text-align: end
+                    p
+                        padding: 10px
+                        &:nth-child(even)
+                            background-color: rgb(230, 230, 230)
+                        &:nth-child(odd)
+                            border-top: 1px solid black
+                            border-bottom: 1px solid black
+                .resposta
+                    width: 50%
+                    p
+                        padding: 10px
+                        &:nth-child(even)
+                            background-color: rgb(230, 230, 230)
+                        &:nth-child(odd)
+                            border-top: 1px solid black
+                            border-bottom: 1px solid black
+            .Digital
+                p
+                    text-align: center
+                    margin: 30px 0px
+                .dedo
+                    width: 220px
+                    height: 120px
+                    margin: auto
+                    img
+                        margin: auto
+                    #msg1
+                        margin: 80px auto 30px auto
+
+        .tela--inicio
+            padding: 5%
+            p
+                margin: 5%
+                font-size: 18pt
+    
+@media screen and (max-width: $large) and (min-width: $midium)
+    body
+        overflow: hidden
+    .box--container
+        display: flex
+        width: 100%
+        height: 77.4vh
+        .menu--lateral
+            width: 15vw
+            height: 85%
+            margin: 30px 30px 0px 2%
+            background: $fundo--menu--lateral--padrao
+            overflow-y: auto
+            overflow-x: hidden
+            &::-webkit-scrollbar
+                width: 0px           
+            div
+                h1
+                    font-family: Arial, Helvetica, sans-serif
+                p
+                    border: 0.5px solid black
+                    padding: 8px 20px 8px 20px
+                    cursor: pointer
+                    font-size: 10pt
+                    background: rgba(220, 220, 220, 0.8)
+                    &:hover
+                        background: rgba(255, 50, 50, 0.9)
+                
+        .tela--inicial
+            overflow: auto
+            margin: 30px 0px
+            height: 65vh
+            width: 70vw
+            min-width: 500px
+            background: $fundo--padrao
+            align-content: center
+            border: 1px solid black
+            &::-webkit-scrollbar
+                width: 0px
+
+        .tela--inicio
+            padding: 5%
+            p
+                margin: 5%
+                font-size: 18pt
+
+@media screen and (max-width: $small)
+    body::-webkit-scrollbar
+        width: 0px
+    .menu--superior
+        width: 100vw
+        height: 10vh
+        background-color: $fundo--menu--superior--padrao
+        div
+            display: flex
+            justify-content: center
+            img
+                height: 10vh
+
+    .menu--lateral
+        width: 100%
+        background: $fundo--menu--lateral--padrao
+        overflow-y: auto
+        overflow-x: hidden
+        margin: 0
+        div
+            h1
+                text-align: center
+                font-size: 22pt
+                font-weight: 600
+            p
+                border: 0.5px solid black
+                text-align: center
+                font-weight: 200
+                padding: 5px
+                cursor: pointer
+                font-size: 16pt
+                background: white
+                color: black
+                text-shadow: 0
+                &:hover
+                    color: black
+                    background: $botao--hover
+
+    .menu--lateral::-webkit-scrollbar
+        width: 0px
+            
+    .tela--inicial
+        width: auto
+        height: 50vh
+        margin: 0
+        background: $fundo--padrao
+
+    .tela--inicial::-webkit-scrollbar
+        width: 0px
+
+    .show
+        display: block
+
+    .tela--inicio
+        width: 100vw
+        p
+            padding: 5%
+            font-size: 18pt
+    
+    .tela--inicio::-webkit-scrollbar
+        width: 0px

@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto";
+}
+
+input {
+  background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 150px;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px;
+    padding: 20px 20px 0px 20px;
+    height: 65vh;
+    width: 65vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicial .placa--input {
+    display: flex;
+    min-height: 400px;
+    vertical-align: middle;
+    margin: 20px;
+    padding: 0px 20%;
+  }
+  .box--container .tela--inicial .placa--input p {
+    height: 40px;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  body {
+    overflow: hidden;
+  }
+  .box--container {
+    display: flex;
+    width: 100%;
+    height: 77.4vh;
+  }
+  .box--container .menu--lateral {
+    width: 15vw;
+    height: 85%;
+    margin: 30px 30px 0px 2%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .box--container .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .menu--lateral div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box--container .menu--lateral div p {
+    border: 0.5px solid black;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    background: rgba(220, 220, 220, 0.8);
+  }
+  .box--container .menu--lateral div p:hover {
+    background: rgba(255, 50, 50, 0.9);
+  }
+  .box--container .tela--inicial {
+    overflow: auto;
+    margin: 30px 0px;
+    height: 65vh;
+    width: 70vw;
+    min-width: 500px;
+    background: #ffffff;
+    align-content: center;
+    border: 1px solid black;
+  }
+  .box--container .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .box--container .tela--inicio {
+    padding: 5%;
+  }
+  .box--container .tela--inicio p {
+    margin: 5%;
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 799px) {
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  .menu--superior {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fafafa;
+  }
+  .menu--superior div {
+    display: flex;
+    justify-content: center;
+  }
+  .menu--superior div img {
+    height: 10vh;
+  }
+  .menu--lateral {
+    width: 100%;
+    background: #fafafa;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .menu--lateral div h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 600;
+  }
+  .menu--lateral div p {
+    border: 0.5px solid black;
+    text-align: center;
+    font-weight: 200;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16pt;
+    background: white;
+    color: black;
+    text-shadow: 0;
+  }
+  .menu--lateral div p:hover {
+    color: black;
+    background: #cccccc;
+  }
+  .menu--lateral::-webkit-scrollbar {
+    width: 0px;
+  }
+  .tela--inicial {
+    width: auto;
+    height: 50vh;
+    margin: 0;
+    background: #ffffff;
+  }
+  .tela--inicial::-webkit-scrollbar {
+    width: 0px;
+  }
+  .show {
+    display: block;
+  }
+  .tela--inicio {
+    width: 100vw;
+  }
+  .tela--inicio p {
+    padding: 5%;
+    font-size: 18pt;
+  }
+  .tela--inicio::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+button {
+  border: 3px solid rgb(0, 120, 0);
+  background-color: white;
+  border-radius: 10px;
+  margin: 2% 0 2% 0;
+  height: 35px;
+  width: 100px;
+  font-size: 22px;
+  box-shadow: 1px 1px 3px 0px black;
+}
+button:hover {
+  color: white;
+  background-color: rgb(0, 120, 0);
+  box-shadow: 0px 0px 0px 0px black;
+}
+button:active {
+  box-shadow: inset 1px 1px 5px 1px black;
+  color: white;
+  background-color: rgb(0, 120, 0);
+}
+
+@media screen and (min-width: 800px) {
+  .tela--inicial--tela1 {
+    z-index: 10;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: "Roboto";
+  }
+  .tela--inicial--tela1 p {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .tela--inicial--tela1 p:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fafafa;
+  }
+  .tela--geral {
+    margin: auto auto auto 0px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .tela--geral .botoes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .tela--geral .botoes button {
+    width: 20%;
+    margin: 40px 0px;
+  }
+  .tela--geral .CorpoProntas h1 {
+    font-size: 18pt;
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(200, 200, 200);
+    border-bottom: 1px solid black;
+  }
+  .tela--geral .CorpoProntas .aba {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 3%;
+  }
+  .tela--geral .CorpoProntas .aba .text--bar {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba1 {
+    width: 50%;
+    background-color: rgba(255, 255, 230, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba1 .tab {
+    padding: 10px 40px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid black;
+    font-weight: 800;
+  }
+  .tela--geral .CorpoProntas .aba .aba2 {
+    width: 50%;
+    background-color: rgba(230, 255, 230, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba2 .tab {
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  .tela--consulta {
+    padding: 20px;
+  }
+  .tela--consulta h1 {
+    font-size: 28px;
+    margin: 20px;
+  }
+  .tela--consulta h4 {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .tela--consulta form {
+    display: flex;
+    flex-direction: column;
+  }
+  .tela--consulta form div {
+    margin-top: 40px;
+  }
+  .tela--consulta form label {
+    font-size: 20px;
+    margin: 2% 0 2% 0;
+  }
+  .tela--consulta form #opt {
+    vertical-align: top;
+  }
+  .tela--consulta form .radio {
+    width: 20px;
+    height: 20px;
+    margin: auto 1% auto auto;
+  }
+  .tela--consulta form input {
+    border-radius: 10px;
+    margin: 2% 0 2% 0;
+    font-size: 12pt;
+    width: 250px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .tela--inicial--tela1 {
+    z-index: 10;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: "Roboto";
+  }
+  .tela--inicial--tela1 p {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .tela--inicial--tela1 p:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fafafa;
+  }
+  .tela--geral {
+    margin: 0;
+    padding: 0 5%;
+    height: auto;
+    background-color: #ffffff;
+  }
+  .tela--geral .botoes button {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    border-radius: 0px;
+  }
+  .tela--geral .CorpoProntas h1 {
+    font-size: 18pt;
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(200, 200, 200);
+    border-bottom: 1px solid black;
+  }
+  .tela--geral .CorpoProntas .aba {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 3%;
+  }
+  .tela--geral .CorpoProntas .aba .text--bar {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba1 {
+    width: 50%;
+    background-color: rgba(255, 255, 230, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba1 .tab {
+    padding: 10px 1px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid black;
+    font-weight: 800;
+  }
+  .tela--geral .CorpoProntas .aba .aba2 {
+    width: 50%;
+    background-color: rgba(230, 255, 230, 0.9);
+  }
+  .tela--geral .CorpoProntas .aba .aba2 .tab {
+    margin: auto;
+    padding: 10px 1px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid black;
+  }
+  .tela--consulta {
+    padding: 20px;
+  }
+  .tela--consulta h1 {
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+  }
+  .tela--consulta h4 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .tela--consulta form {
+    display: flex;
+    flex-direction: column;
+  }
+  .tela--consulta form div {
+    margin-top: 40px;
+  }
+  .tela--consulta form label {
+    font-size: 20px;
+    margin: 2% 0 2% 0;
+  }
+  .tela--consulta form .opt {
+    text-align: center;
+  }
+  .tela--consulta form .radio {
+    width: 20px;
+    height: 20px;
+    margin: auto 1% auto auto;
+  }
+  .tela--consulta form input {
+    align-self: center;
+    border-radius: 10px;
+    margin: 2% 0 2% 0;
+    font-size: 12pt;
+    width: 80%;
+    height: 30px;
+    text-align: center;
+  }
+  .tela--consulta form button {
+    align-self: center;
+    width: 81.5%;
+    height: 50px;
+  }
+}/*# sourceMappingURL=tela1.css.map */
